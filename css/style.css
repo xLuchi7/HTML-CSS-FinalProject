@@ -30,122 +30,171 @@
 header .cabeza {
   display: flex;
   justify-content: center;
-  /*justify-content: space-around;*/
-  /*align-items: center;*/
-  background-color: #232c2c;
-  /*height: 80px;*/ }
-  header .cabeza .div1 {
-    height: 60px;
-    /*width: 110px;*/
-    width: 150px;
-    color: white;
-    margin-bottom: 7px;
-    display: flex;
-    flex-direction: row;
-    /*margin-left: 100px;*/ }
-    header .cabeza .div1 svg {
-      width: 40px;
-      height: 40px;
-      margin-top: 12px; }
-    header .cabeza .div1 a {
+  align-items: center;
+  background-color: #232c2c; }
+  header .cabeza .flexxxx {
+    /*display: flex;
+            justify-content: center;
+            width: 1330px;
+            padding-left: 20px;*/ }
+    header .cabeza .flexxxx .div1 {
+      height: 60px;
+      /*width: 110px;*/
+      width: 120px;
       color: white;
-      text-decoration: none;
-      transition: transform; }
-      header .cabeza .div1 a .titulo {
-        font-size: 27px; }
-    header .cabeza .div1 a:hover {
+      margin-bottom: 7px;
+      display: flex;
+      flex-direction: row;
+      /*margin-left: 100px;*/ }
+      header .cabeza .flexxxx .div1 svg {
+        width: 40px;
+        height: 40px;
+        margin-top: 12px; }
+      header .cabeza .flexxxx .div1 a {
+        color: white;
+        text-decoration: none;
+        transition: transform; }
+        header .cabeza .flexxxx .div1 a .titulo {
+          font-size: 27px; }
+        @media screen and (max-width: 439px) {
+          header .cabeza .flexxxx .div1 a .titulo {
+            font-size: 20px;
+            margin-top: 8px; } }
+      header .cabeza .flexxxx .div1 a:hover {
+        color: rgba(255, 166, 0, 0.993); }
+    @media screen and (max-width: 439px) {
+      header .cabeza .flexxxx .div1 {
+        width: 90px; } }
+    header .cabeza .flexxxx .div1:hover {
       color: rgba(255, 166, 0, 0.993); }
-  header .cabeza .div1:hover {
-    color: rgba(255, 166, 0, 0.993); }
-  header .cabeza .div3 {
-    padding-left: 10px; }
-    header .cabeza .div3 img {
-      width: 70px;
-      height: 65px; }
-  header .cabeza .div2 {
-    padding-left: 30px; }
-    header .cabeza .div2 .input {
-      height: 42px;
-      width: 500px;
-      border: 2px solid orange;
-      border-radius: 5px 0px 0px 5px;
-      padding-left: 5px;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 14px; }
-    @media screen and (max-width: 1211px) {
-      header .cabeza .div2 .input {
-        width: 280px; } }
-    @media screen and (max-width: 423px) {
-      header .cabeza .div2 .input {
-        width: 200px; } }
-  header .cabeza ul li #navbarDropdown {
-    margin-top: 5px;
-    padding-left: 50px;
-    color: white; }
-  header .cabeza .btn-outline-success {
-    color: orange;
-    border: 1px solid orange;
-    border-radius: 0px 2px 2px 0px; }
-  header .cabeza .btn-outline-success:hover {
-    color: white;
-    background-color: orange; }
-  header .cabeza .div4 {
-    padding-left: 50px;
-    padding-top: 15px;
-    font-size: 14px; }
-  header .cabeza .div5 {
-    padding-left: 50px;
-    padding-top: 13px; }
-    header .cabeza .div5 a {
-      text-decoration: none;
-      color: white;
-      transition: transform; }
-    header .cabeza .div5 a:hover {
-      color: rgba(255, 166, 0, 0.993); }
-  header .cabeza .div6 {
-    border: 2px solid rgba(255, 166, 0, 0.993);
-    border-radius: 5px;
-    background-color: rgba(255, 166, 0, 0.993);
-    height: 30px;
-    width: 100px;
-    display: flex;
-    justify-content: center;
-    margin-left: 50px;
-    margin-top: 9px; }
-    header .cabeza .div6 a {
-      text-decoration: none;
-      color: black; }
-    header .cabeza .div6 a:hover {
+    header .cabeza .flexxxx .div3 {
+      padding-left: 10px; }
+      header .cabeza .flexxxx .div3 img {
+        width: 70px;
+        height: 65px; }
+    header .cabeza .flexxxx .div2 {
+      padding-left: 30px; }
+      header .cabeza .flexxxx .div2 .input {
+        height: 42px;
+        width: 500px;
+        border: 2px solid orange;
+        border-radius: 5px 0px 0px 5px;
+        padding-left: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px; }
+      @media screen and (max-width: 1211px) {
+        header .cabeza .flexxxx .div2 .input {
+          width: 280px; } }
+      @media screen and (max-width: 991px) {
+        header .cabeza .flexxxx .div2 .input {
+          width: 400px;
+          height: 38px; } }
+      @media screen and (max-width: 801px) {
+        header .cabeza .flexxxx .div2 .input {
+          width: 300px; } }
+      @media screen and (max-width: 701px) {
+        header .cabeza .flexxxx .div2 .input {
+          width: 200px; } }
+      @media screen and (max-width: 485px) {
+        header .cabeza .flexxxx .div2 .input {
+          width: 150px; } }
+      @media screen and (max-width: 439px) {
+        header .cabeza .flexxxx .div2 .input {
+          width: 140px; } }
+      @media screen and (max-width: 377px) {
+        header .cabeza .flexxxx .div2 .input {
+          width: 115px;
+          padding-left: 2px; } }
+    @media screen and (max-width: 991px) {
+      header .cabeza .flexxxx .div2 {
+        height: 38px; } }
+    header .cabeza .flexxxx button .bi-search {
+      width: 20px;
+      height: 20px; }
+    header .cabeza .flexxxx ul li #navbarDropdown {
+      margin-top: 5px;
+      padding-left: 50px;
       color: white; }
+    header .cabeza .flexxxx .btn-outline-success {
+      color: orange;
+      border: 1px solid orange;
+      border-radius: 0px 2px 2px 0px; }
+    @media screen and (max-width: 439px) {
+      header .cabeza .flexxxx .btn-outline-success {
+        /*display: none;*/ } }
+    header .cabeza .flexxxx .btn-outline-success:hover {
+      color: white;
+      background-color: orange; }
+    header .cabeza .flexxxx .div4 {
+      padding-left: 50px;
+      padding-top: 15px;
+      font-size: 14px; }
+    header .cabeza .flexxxx .div5 {
+      padding-left: 50px;
+      padding-top: 13px; }
+      header .cabeza .flexxxx .div5 a {
+        text-decoration: none;
+        color: white;
+        transition: transform; }
+      header .cabeza .flexxxx .div5 a:hover {
+        color: rgba(255, 166, 0, 0.993); }
+    header .cabeza .flexxxx .div6 {
+      border: 2px solid rgba(255, 166, 0, 0.993);
+      border-radius: 5px;
+      background-color: rgba(255, 166, 0, 0.993);
+      height: 30px;
+      width: 100px;
+      display: flex;
+      justify-content: center;
+      margin-left: 50px;
+      margin-top: 9px; }
+      header .cabeza .flexxxx .div6 a {
+        text-decoration: none;
+        color: black; }
+      header .cabeza .flexxxx .div6 a:hover {
+        color: white; }
 
 @media screen and (max-width: 991px) {
   header .cabeza {
-    display: block; }
-    header .cabeza #navbarSupportedContent {
-      display: flex;
-      flex-direction: column-reverse; }
-    header .cabeza .div1 {
-      margin-left: 30px; }
+    display: block;
+    /*#navbarSupportedContent{
+                display: flex;
+                flex-direction: column-reverse;
+            }*/
+    /*.d-flex{
+                margin-top: 20px;
+                padding-left: 0px;
+                margin-left: 0px;
+                display: block;
+            }*/ }
     header .cabeza .d-flex {
-      margin-top: 20px;
-      padding-left: 0px;
+      margin-bottom: 0px;
+      margin-top: 0px;
+      padding-top: 0px;
       margin-left: 0px;
-      display: block; }
+      padding-left: 0px; }
+      header .cabeza .d-flex .div2 {
+        padding-left: 0px;
+        margin-left: 0px; }
+    header .cabeza .div1 {
+      margin-left: 20px;
+      padding-right: 0px;
+      margin-right: 0px; }
     header .cabeza .div4 {
       margin-top: 10px;
-      margin-left: 30px;
+      margin-left: 10px;
       padding-left: 0px; }
     header .cabeza ul li #navbarDropdown {
       margin-top: 10px;
-      margin-left: 30px;
+      margin-left: 3px;
       padding-left: 0px; }
     header .cabeza .div5 {
       margin-top: 10px;
-      margin-left: 31px;
+      margin-left: 3px;
       padding-left: 0px; }
     header .cabeza .div6 {
       margin-top: 10px;
-      margin-left: 30px;
+      margin-left: 0px;
       padding-left: 0px; }
     header .cabeza .navbar-toggler {
       color: white;
@@ -154,6 +203,24 @@ header .cabeza {
       margin-right: 20px; }
       header .cabeza .navbar-toggler .navbar-toggler-icon {
         background-color: white; } }
+
+@media screen and (max-width: 557px) {
+  header .cabeza .div1 {
+    margin-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
+    padding-left: 0px; }
+    header .cabeza .div1 h1 {
+      padding-right: 0px;
+      margin-right: 0px; }
+  header .cabeza .d-flex {
+    margin-left: 0px;
+    margin-right: 0px; }
+    header .cabeza .d-flex .div2 {
+      margin-left: 0px;
+      margin-right: 0px; }
+  header .cabeza .navbar-toggler {
+    margin-right: 0px; } }
 
 .color {
   background-color: #232c2c; }
@@ -198,6 +265,115 @@ main {
       main nav .seccion1 .mdiv1 a .vender {
         font-size: 24px;
         padding-top: 3px; }
+  main .comprar-todo {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    main .comprar-todo .flex {
+      display: flex;
+      /*border: 1px solid gray;*/
+      height: 1000px;
+      width: 70%;
+      /*margin-left: 400px;*/
+      margin-top: 50px;
+      margin-bottom: 50px;
+      background-color: white; }
+      main .comprar-todo .flex .comprar-foto {
+        margin-top: 0px;
+        padding-top: 0px;
+        height: 350px;
+        width: 60%;
+        /*border: 1px solid gray;*/
+        /*display: flex;
+                justify-content: center;*/ }
+        main .comprar-todo .flex .comprar-foto .carousel #carouselExampleCaptions img {
+          margin-top: 0px;
+          padding-top: 0px;
+          margin-bottom: 250px;
+          padding-bottom: 250px;
+          height: 350px;
+          width: 50%; }
+      main .comprar-todo .flex .texto {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        width: 40%;
+        /*border: 1px solid gray;*/ }
+        main .comprar-todo .flex .texto .cien {
+          margin-left: 5px; }
+        main .comprar-todo .flex .texto .bi-star-fill {
+          margin-top: 3px; }
+        main .comprar-todo .flex .texto .bi-star-half {
+          margin-top: 3px; }
+        main .comprar-todo .flex .texto .estrellas {
+          align-items: left;
+          display: flex;
+          flex-direction: row;
+          margin-left: 20px;
+          margin-top: 15px;
+          color: #e7bb4c; }
+        main .comprar-todo .flex .texto h3 {
+          margin-top: 70px;
+          margin-left: 20px;
+          margin-right: 20px;
+          text-align: right;
+          text-align: center; }
+        main .comprar-todo .flex .texto .mas-vendido {
+          border-radius: 5px;
+          background-color: rgba(255, 166, 0, 0.993);
+          height: 24px;
+          width: 95px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 8px;
+          margin-left: 20px; }
+          main .comprar-todo .flex .texto .mas-vendido h6 {
+            margin-top: 5px;
+            color: white;
+            font-size: 12px; }
+        main .comprar-todo .flex .texto .direccion {
+          width: 90%;
+          margin-left: 20px; }
+        main .comprar-todo .flex .texto .comprar-ahora {
+          border-radius: 5px;
+          background-color: rgba(255, 166, 0, 0.993);
+          height: 44px;
+          width: 89%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 28px;
+          margin-left: 20px; }
+          main .comprar-todo .flex .texto .comprar-ahora h6 {
+            margin-top: 3px;
+            color: white;
+            font-size: 22px; }
+        main .comprar-todo .flex .texto h5 {
+          margin-top: 20px;
+          margin-left: 20px;
+          font-size: 30px;
+          font-family: Arial, Helvetica, sans-serif; }
+    @media screen and (max-width: 1347px) {
+      main .comprar-todo .flex {
+        width: 80%; } }
+    @media screen and (max-width: 1131px) {
+      main .comprar-todo .flex {
+        width: 100%; }
+        main .comprar-todo .flex .comprar-foto {
+          width: 50%; }
+        main .comprar-todo .flex .texto {
+          width: 50%; } }
+    @media screen and (max-width: 603px) {
+      main .comprar-todo .flex .texto h3 {
+        margin-top: 20px; } }
+    @media screen and (max-width: 463px) {
+      main .comprar-todo .flex {
+        height: 1300px; }
+        main .comprar-todo .flex .comprar-foto {
+          width: 40%; }
+        main .comprar-todo .flex .texto {
+          width: 60%; } }
   main .felxx {
     display: flex;
     justify-content: center; }
@@ -235,9 +411,14 @@ main {
           margin-left: 20px;
           border-radius: 5px;
           transition: transform; }
-          main .felxx .grid-seccion .grid .barra-comprar h6 {
-            font-size: 18px;
-            padding-bottom: 3px; }
+          main .felxx .grid-seccion .grid .barra-comprar a {
+            text-decoration: none;
+            color: black; }
+            main .felxx .grid-seccion .grid .barra-comprar a h6 {
+              font-size: 16px;
+              padding-bottom: 3px; }
+          main .felxx .grid-seccion .grid .barra-comprar a:hover {
+            color: white; }
           main .felxx .grid-seccion .grid .barra-comprar .bi {
             margin-bottom: 10px;
             margin-right: 15px; }
@@ -266,6 +447,9 @@ main {
           main .felxx .grid-seccion .grid #noflex #precio {
             padding-left: 15px;
             padding-top: 5px; }
+      main .felxx .grid-seccion .grid:hover {
+        border: 2px solid black;
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.75); }
     @media screen and (max-width: 1051px) {
       main .felxx .grid-seccion {
         grid-template-columns: 330px 330px;
@@ -314,20 +498,69 @@ main {
         color: black; }
       main section .ventas-inicio .div6 a:hover {
         color: white; }
-  main section .ventas-datos {
-    padding-top: 30px;
-    height: 50px;
-    display: flex; }
-    main section .ventas-datos h2 {
+  main section .centrar {
+    display: flex;
+    flex-direction: column; }
+    main section .centrar .ventas-datos {
+      padding-top: 30px;
+      height: 50px;
+      display: flex; }
+      main section .centrar .ventas-datos h2 {
+        padding-left: 40px; }
+      main section .centrar .ventas-datos div #productos {
+        margin-top: 9px;
+        margin-left: 5px; }
+    main section .centrar .ubicacion {
+      height: 650px;
+      padding-top: 40px;
       padding-left: 40px; }
-    main section .ventas-datos div #productos {
-      margin-top: 4px; }
-  main section .ubicacion {
-    height: 650px;
-    padding-top: 40px;
-    padding-left: 40px; }
-    main section .ubicacion .a {
-      padding-top: 30px; }
+      main section .centrar .ubicacion .a {
+        padding-top: 30px; }
+    @media screen and (max-width: 645px) {
+      main section .centrar .ubicacion div iframe {
+        width: 340px;
+        height: 340px; }
+      main section .centrar .ventas-datos h2 {
+        padding-left: 5px; }
+      main section .centrar .ubicacion {
+        padding-left: 5px; }
+      main section .centrar #productos {
+        margin-top: 0px; } }
+    @media screen and (max-width: 400px) {
+      main section .centrar .ventas-datos h2 {
+        padding-left: 0px; }
+      main section .centrar .ubicacion {
+        padding-left: 0px; }
+      main section .centrar #productos {
+        margin-top: 0px; } }
+    main section .centrar .g-3 {
+      width: 500px;
+      margin-left: 0px;
+      margin-bottom: 100px; }
+      main section .centrar .g-3 div .largo {
+        height: 100px; }
+    @media screen and (max-width: 645px) {
+      main section .centrar .g-3 {
+        width: 350px; } }
+    @media screen and (max-width: 767px) {
+      main section .centrar .g-3 {
+        margin-bottom: 250px; } }
+    @media screen and (max-width: 400px) {
+      main section .centrar .g-3 {
+        padding-left: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-right: 0px; } }
+  @media screen and (max-width: 645px) {
+    main section .centrar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /*margin-left: 50px;*/
+      padding-left: 0px;
+      margin-left: 0px;
+      padding-right: 0px;
+      margin-right: 0px; } }
 
 .color {
   background-color: #232c2c; }
@@ -337,18 +570,37 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    .color .div-inicio-sesion .iniciar-texto {
+      text-align: center; }
+    .color .div-inicio-sesion .registrarse-texto {
+      color: white; }
+    @media screen and (max-width: 389px) {
+      .color .div-inicio-sesion .registrarse-texto {
+        text-align: center; } }
     .color .div-inicio-sesion .inicio-card {
       display: flex;
       flex-direction: column; }
       .color .div-inicio-sesion .inicio-card .correo {
-        padding-top: 124px; }
+        padding-top: 124px;
+        margin-bottom: 8px; }
+      @media screen and (max-width: 801px) {
+        .color .div-inicio-sesion .inicio-card .correo {
+          padding-right: 00px; } }
       .color .div-inicio-sesion .inicio-card .barra-correo {
         height: 32px;
         width: 300px;
         border: 2px solid grey;
-        border-radius: 5px; }
+        border-radius: 5px;
+        padding-left: 5px; }
+      @media screen and (max-width: 801px) {
+        .color .div-inicio-sesion .inicio-card .barra-correo {
+          margin-right: 00px; } }
       .color .div-inicio-sesion .inicio-card .contra {
-        padding-top: 30px; }
+        padding-top: 30px;
+        margin-bottom: 8px; }
+      @media screen and (max-width: 801px) {
+        .color .div-inicio-sesion .inicio-card .contra {
+          margin-left: 00px; } }
       .color .div-inicio-sesion .inicio-card .enter {
         border: 2px solid rgba(255, 166, 0, 0.993);
         border-radius: 5px;
@@ -365,6 +617,9 @@ main {
           transition: transform; }
         .color .div-inicio-sesion .inicio-card .enter p:hover {
           color: white; }
+      @media screen and (max-width: 801px) {
+        .color .div-inicio-sesion .inicio-card .enter {
+          margin-right: 00px; } }
 
 footer {
   background-color: #56568b; }
@@ -384,3 +639,9 @@ footer {
     position: fixed;
     right: 40px;
     bottom: 40px; }
+  @media screen and (max-width: 991px) {
+    footer .botton img {
+      width: 50px;
+      height: 50px;
+      right: 20px;
+      bottom: 20px; } }

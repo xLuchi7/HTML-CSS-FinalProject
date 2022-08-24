@@ -2,162 +2,243 @@ header{
     .cabeza{
         display: flex;
         justify-content: center;
-        /*justify-content: space-around;*/
-        /*align-items: center;*/
+        align-items: center;
         background-color: rgb(35, 44, 44);
-        /*height: 80px;*/
-        .div1{
-            height: 60px;
-            /*width: 110px;*/
-            width: 150px;
-            color: white;
-            margin-bottom: 7px;
-            display: flex;
-            flex-direction: row;
-            /*margin-left: 100px;*/
-            svg{
-                width: 40px;
-                height: 40px;
-                margin-top: 12px;
-            }
-            a{
+        .flexxxx{
+            /*display: flex;
+            justify-content: center;
+            width: 1330px;
+            padding-left: 20px;*/
+            .div1{
+                height: 60px;
+                /*width: 110px;*/
+                width: 120px;
                 color: white;
-                text-decoration: none;
-                transition: transform;
-                .titulo{
-                    font-size: 27px;
+                margin-bottom: 7px;
+                display: flex;
+                flex-direction: row;
+                /*margin-left: 100px;*/
+                svg{
+                    width: 40px;
+                    height: 40px;
+                    margin-top: 12px;
+                }
+                a{
+                    color: white;
+                    text-decoration: none;
+                    transition: transform;
+                    .titulo{
+                        font-size: 27px;
+                    }
+                    @media screen and (max-width: 439px){
+                        .titulo{
+                            font-size: 20px;
+                            margin-top: 8px;
+                        }
+                        
+                    }
+                }
+                a:hover{
+                    color: rgba(255, 166, 0, 0.993);
                 }
             }
-            a:hover{
+            @media screen and (max-width: 439px){
+                .div1{
+                    width: 90px;
+                }
+                
+            }
+            .div1:hover{
                 color: rgba(255, 166, 0, 0.993);
             }
-        }
-        .div1:hover{
-            color: rgba(255, 166, 0, 0.993);
-        }
-        .div3{
-            padding-left: 10px;
-            img{
-                width: 70px;
-                height: 65px;
+            .div3{
+                padding-left: 10px;
+                img{
+                    width: 70px;
+                    height: 65px;
+                }
             }
-        }
-        .div2{
-            padding-left: 30px;
-            .input{
-                height: 42px;
-                width: 500px;
-                border: 2px solid orange;
-                border-radius: 5px 0px 0px 5px;
-                padding-left: 5px;
-                font-family: Arial, Helvetica, sans-serif;
+            .div2{
+                padding-left: 30px;
+                .input{
+                    height: 42px;
+                    width: 500px;
+                    border: 2px solid orange;
+                    border-radius: 5px 0px 0px 5px;
+                    padding-left: 5px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 14px;
+                }
+                @media screen and (max-width: 1211px){
+                    .input{
+                        width: 280px;
+                    }
+                    
+                }
+                @media screen and (max-width: 991px){
+                    .input{
+                        width: 400px;
+                        height: 38px;
+                    }
+                    
+                }
+                @media screen and (max-width: 801px){
+                    .input{
+                        width: 300px;
+                    }
+                    
+                }
+                @media screen and (max-width: 701px){
+                    .input{
+                        width: 200px;
+                    }
+                    
+                }
+                @media screen and (max-width: 485px){
+                    .input{
+                        width: 150px;
+                    }
+                    
+                }
+                @media screen and (max-width: 439px){
+                    .input{
+                        width: 140px;
+                    }
+                    
+                }
+                @media screen and (max-width: 377px){
+                    .input{
+                        width: 115px;
+                        padding-left: 2px;
+                    }
+                    
+                }
+            }
+            @media screen and (max-width: 991px){
+                .div2{
+                    height: 38px;
+                }
+                
+            }
+            button{
+                .bi-search{
+                    width: 20px;
+                    height: 20px;
+
+                }
+            }
+            ul{
+                li{
+                    #navbarDropdown{
+                        margin-top: 5px;
+                        padding-left: 50px;
+                        color: white;
+                    }
+                }
+            }
+            .btn-outline-success{
+                color: orange;
+                border: 1px solid orange;
+                border-radius: 0px 2px 2px 0px;
+            }
+            @media screen and (max-width: 439px){
+                .btn-outline-success{
+                    /*display: none;*/
+                }
+                
+            }
+            .btn-outline-success:hover{
+                color: white;
+                background-color: orange;
+            }
+            .div4{
+                padding-left: 50px;
+                padding-top: 15px;
                 font-size: 14px;
             }
-            @media screen and (max-width: 1211px){
-                .input{
-                    width: 280px;
+            .div5{
+                padding-left: 50px;
+                padding-top: 13px;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    transition: transform;
                 }
-                
-            }
-            @media screen and (max-width: 423px){
-                .input{
-                    width: 200px;
+                a:hover{
+                    color: rgba(255, 166, 0, 0.993);
                 }
-                
             }
-        }
-        ul{
-            li{
-                #navbarDropdown{
-                    margin-top: 5px;
-                    padding-left: 50px;
+            .div6{
+                border: 2px solid rgba(255, 166, 0, 0.993); 
+                border-radius: 5px;
+                background-color: rgba(255, 166, 0, 0.993);
+                height: 30px;
+                width: 100px;
+                display: flex;
+                justify-content: center;
+                margin-left: 50px;
+                margin-top: 9px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+                a:hover{
                     color: white;
                 }
-            }
-        }
-        .btn-outline-success{
-            color: orange;
-            border: 1px solid orange;
-            border-radius: 0px 2px 2px 0px;
-        }
-        .btn-outline-success:hover{
-            color: white;
-            background-color: orange;
-        }
-        .div4{
-            padding-left: 50px;
-            padding-top: 15px;
-            font-size: 14px;
-        }
-        .div5{
-            padding-left: 50px;
-            padding-top: 13px;
-            a{
-                text-decoration: none;
-                color: white;
-                transition: transform;
-            }
-            a:hover{
-                color: rgba(255, 166, 0, 0.993);
-            }
-        }
-        .div6{
-            border: 2px solid rgba(255, 166, 0, 0.993); 
-            border-radius: 5px;
-            background-color: rgba(255, 166, 0, 0.993);
-            height: 30px;
-            width: 100px;
-            display: flex;
-            justify-content: center;
-            margin-left: 50px;
-            margin-top: 9px;
-            a{
-                text-decoration: none;
-                color: black;
-            }
-            a:hover{
-                color: white;
             }
         }
     }
     @media screen and (max-width: 991px){
         .cabeza{
             display: block;
-            #navbarSupportedContent{
+            .d-flex{
+                margin-bottom: 0px;
+                margin-top: 0px;
+                padding-top: 0px;
+                margin-left: 0px;
+                padding-left: 0px;
+                .div2{
+                    padding-left: 0px;
+                    margin-left: 0px;
+                }
+            }
+            /*#navbarSupportedContent{
                 display: flex;
                 flex-direction: column-reverse;
-            }
+            }*/
             .div1{
-                margin-left: 30px;
+                margin-left: 20px;
+                padding-right: 0px;
+                margin-right: 0px;
             }
-            .d-flex{
+            /*.d-flex{
                 margin-top: 20px;
                 padding-left: 0px;
                 margin-left: 0px;
                 display: block;
-            }
+            }*/
             .div4{
                 margin-top: 10px;
-                margin-left: 30px;
+                margin-left: 10px;
                 padding-left: 0px;
             }
             ul{
                 li{
                     #navbarDropdown{
                         margin-top: 10px;
-                        margin-left: 30px;
+                        margin-left: 3px;
                         padding-left: 0px;
                     }
                 }
             }
             .div5{
                 margin-top: 10px;
-                margin-left: 31px;
+                margin-left: 3px;
                 padding-left: 0px;
             }
             .div6{
                 margin-top: 10px;
-                margin-left: 30px;
+                margin-left: 0px;
                 padding-left: 0px;
             }
             .navbar-toggler{
@@ -168,6 +249,32 @@ header{
                 .navbar-toggler-icon{
                     background-color: white;
                 }
+            }
+        }
+    }
+    @media screen and (max-width: 557px){
+        .cabeza{
+            .div1{
+                margin-left: 0px;
+                padding-right: 0px;
+                margin-right: 0px;
+                padding-left: 0px;
+                h1{
+                    padding-right: 0px;
+                    margin-right: 0px;
+                }
+            }
+            .d-flex{
+                margin-left: 0px;
+                margin-right: 0px;
+                .div2{
+                    margin-left: 0px;
+                    margin-right: 0px;
+                }
+            }
+            .navbar-toggler{
+                margin-right: 0px;
+               
             }
         }
     }

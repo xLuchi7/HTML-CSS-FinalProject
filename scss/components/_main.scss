@@ -34,6 +34,153 @@ main{
             }
         }
     }
+    .comprar-todo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .flex{
+            display: flex;
+            /*border: 1px solid gray;*/
+            height: 1000px;
+            width: 70%;
+            /*margin-left: 400px;*/
+            margin-top: 50px;
+            margin-bottom: 50px;
+            background-color: white;
+            .comprar-foto{
+                margin-top: 0px;
+                padding-top: 0px;
+                height: 350px;
+                width: 60%;
+                /*border: 1px solid gray;*/
+                /*display: flex;
+                justify-content: center;*/
+                .carousel{
+                    #carouselExampleCaptions{
+                        img{
+                            margin-top: 0px;
+                            padding-top: 0px;
+                            margin-bottom: 250px;
+                            padding-bottom: 250px;
+                            height: 350px;
+                            width: 50%;
+                        }
+    
+                    }
+                }
+            }
+            .texto{
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                width: 40%;
+                /*border: 1px solid gray;*/
+                .cien{
+                    margin-left: 5px;
+                }
+                .bi-star-fill{
+                    margin-top: 3px;  
+                }
+                .bi-star-half{
+                    margin-top: 3px;
+                }
+                .estrellas{
+                    align-items: left;
+                    display: flex;
+                    flex-direction: row;
+                    margin-left: 20px;
+                    margin-top: 15px;
+                    color: rgb(231, 187, 76)
+    
+                }
+                h3{
+                    margin-top: 70px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    text-align: right;
+                    text-align: center;
+                }
+                .mas-vendido{
+                    border-radius: 5px;
+                    background-color: rgba(255, 166, 0, 0.993);
+                    height: 24px;
+                    width: 95px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 8px;
+                    margin-left: 20px;
+                    h6{
+                        margin-top: 5px;
+                        color: white;
+                        font-size: 12px;
+                    }
+                }
+                .direccion{
+                    width: 90%;
+                    margin-left: 20px;
+                }
+                .comprar-ahora{
+                    border-radius: 5px;
+                    background-color: rgba(255, 166, 0, 0.993);
+                    height: 44px;
+                    width: 89%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 28px;
+                    margin-left: 20px;
+                    h6{
+                        margin-top: 3px;
+                        color: white;
+                        font-size: 22px;
+                    }
+                }
+                h5{
+                    margin-top: 20px;
+                    margin-left: 20px;
+                    font-size: 30px;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+            }
+        }
+        @media screen and (max-width: 1347px){
+            .flex{
+                width: 80%;
+            }
+        }
+        @media screen and (max-width: 1131px){
+            .flex{
+                width: 100%;
+                .comprar-foto{
+                    width: 50%;
+                }
+                .texto{
+                    width: 50%;
+                }
+            }
+        }
+        @media screen and (max-width: 603px){
+            .flex{
+                .texto{
+                    h3{
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: 463px){
+            .flex{
+                height: 1300px;
+                .comprar-foto{
+                    width: 40%;
+                }
+                .texto{
+                    width: 60%;
+                }
+            }
+        }
+    }
     .felxx{
         display: flex;
         justify-content: center;
@@ -74,9 +221,17 @@ main{
                     margin-left: 20px;
                     border-radius: 5px;
                     transition: transform;
-                    h6{
-                        font-size: 18px;
-                        padding-bottom: 3px;
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        h6{
+                            font-size: 16px;
+                            padding-bottom: 3px;
+                            
+                        }
+                    }
+                    a:hover{
+                        color: white;
                     }
                     .bi{
                         margin-bottom: 10px;
@@ -113,6 +268,10 @@ main{
                         padding-top: 5px;
                     }
                 }
+            }
+            .grid:hover{
+                border: 2px solid black;
+                box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.75);
             }
         }
         @media screen and (max-width: 1051px){
@@ -180,25 +339,96 @@ main{
         }
     }
     section{
-        .ventas-datos{
-            padding-top: 30px;
-            height: 50px;
+        .centrar{
             display: flex;
-            h2{
-                padding-left: 40px;
+            flex-direction: column;
+            .ventas-datos{
+                padding-top: 30px;
+                height: 50px;
+                display: flex;
+                h2{
+                    padding-left: 40px;
+                }
+                div{
+                    #productos{
+                        margin-top: 9px;
+                        margin-left: 5px;
+                    }
+                }
             }
-            div{
+            .ubicacion{
+                height: 650px;
+                padding-top: 40px;
+                padding-left: 40px;
+                .a{
+                    padding-top: 30px;
+                }
+            }
+            @media screen and (max-width: 645px){
+                .ubicacion div iframe{
+                    width: 340px;
+                    height: 340px;
+                }
+                .ventas-datos h2{
+                    padding-left: 5px;
+                }
+                .ubicacion{
+                    padding-left: 5px;
+                }
                 #productos{
-                    margin-top: 4px;
+                    margin-top: 0px;
+                }  
+            }
+            @media screen and (max-width: 400px){
+                .ventas-datos h2{
+                    padding-left: 0px;
+                }
+                .ubicacion{
+                    padding-left: 0px;
+                }
+                #productos{
+                    margin-top: 0px;
+                }  
+            }
+            .g-3{
+                width: 500px;
+                margin-left: 0px;
+                margin-bottom: 100px;
+                div{
+                    .largo{
+                        height: 100px;
+                    }
+                }
+            }
+            @media screen and (max-width: 645px){
+                .g-3{
+                    width: 350px;
+                }
+            }
+            @media screen and (max-width: 767px){
+                .g-3{
+                    margin-bottom: 250px;
+                }
+            }
+            @media screen and (max-width: 400px){
+                .g-3{
+                    padding-left: 0px;
+                    margin-left: 0px;
+                    margin-right: 0px;
+                    padding-right: 0px;
                 }
             }
         }
-        .ubicacion{
-            height: 650px;
-            padding-top: 40px;
-            padding-left: 40px;
-            .a{
-                padding-top: 30px;
+        @media screen and (max-width: 645px){
+            .centrar{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                /*margin-left: 50px;*/
+                padding-left: 0px;
+                margin-left: 0px;
+                padding-right: 0px;
+                margin-right: 0px;
             }
         }
     }
@@ -211,20 +441,50 @@ main{
         display: flex;
         flex-direction: column;
         align-items: center;
+        .iniciar-texto{
+            text-align: center;
+        }
+        .registrarse-texto{
+            color: white;
+        }
+        @media screen and (max-width: 389px){
+            .registrarse-texto{
+                text-align: center;
+            }
+        }
         .inicio-card{
             display: flex;
             flex-direction: column;
             .correo{
                 padding-top: 124px;
+                margin-bottom: 8px;
+            }
+            @media screen and (max-width: 801px){
+                .correo{
+                    padding-right: 00px;
+                }
             }
             .barra-correo{
                 height: 32px;
                 width: 300px;
                 border: 2px solid grey;
                 border-radius: 5px;
+                padding-left: 5px;
+            }
+            @media screen and (max-width: 801px){
+                .barra-correo{
+                    margin-right: 00px;
+                }
             }
             .contra{
                 padding-top: 30px;
+                margin-bottom: 8px;
+            }
+            @media screen and (max-width: 801px){
+                .contra{
+                    margin-left: 00px;
+            
+                }   
             }
             .enter{
                 border: 2px solid rgba(255, 166, 0, 0.993); 
@@ -244,6 +504,12 @@ main{
                 p:hover{
                     color: white;
                 }
+            }
+            @media screen and (max-width: 801px){
+                .enter{
+                    margin-right: 00px;
+            
+                }  
             }
         }
     }
