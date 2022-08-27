@@ -1,15 +1,18 @@
+@import "../base/variables";
+@import "../base/maps-extends";
 main{
-    background-color: rgb(224, 221, 216);
+    background-color: $main-back;
     padding-bottom: 5px;
     nav{
         .seccion1{
-            background-color: rgb(52, 52, 71);
+            background-color: $azul;
             height: 50px;
             flex-wrap: wrap;
             .mdiv1{
-                display: flex;
+                /*display: flex;
+                align-items: center;*/
+                @extend %flexTres;
                 justify-content: space-around;
-                align-items: center;
                 font-size: 14px;
                 padding-top: 5px;
                 flex-wrap: wrap;
@@ -23,7 +26,7 @@ main{
                     }
                 }
                 a:hover{
-                    color: rgba(255, 166, 0, 0.993);
+                    color: $naranja;
                 }
                 a{
                     .vender{
@@ -35,9 +38,10 @@ main{
         }
     }
     .comprar-todo{
-        display: flex;
+        /*display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: center;*/
+        @extend %flex;
         .flex{
             display: flex;
             /*border: 1px solid gray;*/
@@ -90,7 +94,7 @@ main{
                     flex-direction: row;
                     margin-left: 20px;
                     margin-top: 15px;
-                    color: rgb(231, 187, 76)
+                    color: $estrellas;
     
                 }
                 h3{
@@ -102,12 +106,13 @@ main{
                 }
                 .mas-vendido{
                     border-radius: 5px;
-                    background-color: rgba(255, 166, 0, 0.993);
+                    background-color: $naranja;
                     height: 24px;
                     width: 95px;
-                    display: flex;
+                    /*display: flex;
                     justify-content: center;
-                    align-items: center;
+                    align-items: center;*/
+                    @extend %flex;
                     margin-top: 8px;
                     margin-left: 20px;
                     h6{
@@ -122,12 +127,13 @@ main{
                 }
                 .comprar-ahora{
                     border-radius: 5px;
-                    background-color: rgba(255, 166, 0, 0.993);
+                    background-color: $naranja;
                     height: 44px;
                     width: 89%;
-                    display: flex;
+                    /*display: flex;
                     justify-content: center;
-                    align-items: center;
+                    align-items: center;*/
+                    @extend %flex;
                     margin-top: 28px;
                     margin-left: 20px;
                     h6{
@@ -182,8 +188,9 @@ main{
         }
     }
     .felxx{
-        display: flex;
-        justify-content: center;
+        /*display: flex;
+        justify-content: center;*/
+        @extend %flexDos;
         .grid-seccion{
             display: grid;
             grid-template-columns: 330px 330px 330px;
@@ -210,11 +217,12 @@ main{
                     font-size: 27px;
                 }
                 .barra-comprar{
-                    display: flex;
-                    flex-direction: row;
+                    /*display: flex;
                     align-items: center;
-                    justify-content: center;
-                    background-color:  rgb(224, 221, 216);
+                    justify-content: center;*/
+                    @extend %flex;
+                    flex-direction: row;
+                    background-color:  $main-back;
                     height: 30px;
                     padding-top: 10px;
                     width: 250px;
@@ -239,7 +247,7 @@ main{
                     }
                 }
                 .barra-comprar:hover{
-                    background-color: rgb(160, 155, 155);
+                    background-color: $gris-claro;
                     color: white;
                     border: 2px solid black;
                 }
@@ -252,9 +260,10 @@ main{
                         background-color: red;
                         height: 30px;
                         width: 140px;
-                        display: flex;
+                        /*display: flex;
                         align-items: center;
-                        justify-content: center;
+                        justify-content: center;*/
+                        @extend %flex;
                         margin-top: 6px;
                         p{
                             font-size: 17px;
@@ -271,7 +280,7 @@ main{
             }
             .grid:hover{
                 border: 2px solid black;
-                box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.75);
+                box-shadow: 5px 5px 5px 5px $box-shadow;
             }
         }
         @media screen and (max-width: 1051px){
@@ -313,20 +322,21 @@ main{
                     margin-right: 15px;
                 }
                 h2{
-                    color: rgb(39, 36, 36);
+                    color: black;
                     font-family: Arial, Helvetica, sans-serif;
                     font-size: 22px;
                     padding-top: 6px;
                 }
             }
             .div6{
-                border: 2px solid rgba(255, 166, 0, 0.993); 
-                border-radius: 10px;
-                background-color: rgba(255, 166, 0, 0.993);
+                border: 2px solid $naranja; 
+                border-radius: 5px;
+                background-color: $naranja;
                 height: 30px;
                 width: 100px;
-                display: flex;
-                justify-content: center;
+                /*display: flex;
+                justify-content: center;*/
+                @extend %flexDos;
                 margin-left: 20px;
                 a{
                     text-decoration: none;
@@ -434,13 +444,14 @@ main{
     }
 }
 .color{
-    background-color: rgb(35, 44, 44);
+    background-color: $header-back;
     .div-inicio-sesion{
         padding-top: 170px;
         color: white;
-        display: flex;
+        /*display: flex;
+        align-items: center;*/
+        @extend %flexTres;
         flex-direction: column;
-        align-items: center;
         .iniciar-texto{
             text-align: center;
         }
@@ -487,13 +498,14 @@ main{
                 }   
             }
             .enter{
-                border: 2px solid rgba(255, 166, 0, 0.993); 
+                border: 2px solid $naranja; 
                 border-radius: 5px;
-                background-color: rgba(255, 166, 0, 0.993);
+                background-color: $naranja;
                 height: 30px;
                 width: 300px;
-                display: flex;
-                justify-content: center;
+                /*display: flex;
+                justify-content: center;*/
+                @extend %flexDos;
                 margin-top: 50px;
                 margin-bottom: 230px;
                 margin-right: 500px;
