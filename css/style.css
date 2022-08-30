@@ -28,12 +28,12 @@
   animation-delay: 2.4s; }
 
 /*EXTENDS*/
-header .cabeza, main .comprar-todo, main .comprar-todo .flex .texto .mas-vendido, main .comprar-todo .flex .texto .comprar-ahora, main .felxx .grid-seccion .grid .barra-comprar, main .felxx .grid-seccion .grid #noflex #cajita {
+header .navbar, main .comprar-todo, main .comprar-todo .flex .texto .mas-vendido, main .comprar-todo .flex .texto .comprar-ahora, main .felxx .grid-seccion .grid .barra-comprar, main .felxx .grid-seccion .grid #noflex #cajita {
   display: flex;
   justify-content: center;
   align-items: center; }
 
-header .cabeza .flexxxx .div6, main .felxx, main section .ventas-inicio .div6, .color .div-inicio-sesion .inicio-card .enter {
+header .navbar .flexxxx .div6, main .felxx, main section .ventas-inicio .div6, .color .div-inicio-sesion .inicio-card .enter {
   display: flex;
   justify-content: center; }
 
@@ -41,17 +41,17 @@ main nav .seccion1 .mdiv1, .color .div-inicio-sesion {
   display: flex;
   align-items: center; }
 
-header .cabeza {
+header .navbar {
   /*display: flex;
         justify-content: center;
         align-items: center;*/
   background-color: #232c2c; }
-  header .cabeza .flexxxx {
+  header .navbar .flexxxx {
     /*display: flex;
             justify-content: center;
             width: 1330px;
             padding-left: 20px;*/ }
-    header .cabeza .flexxxx .div1 {
+    header .navbar .flexxxx .div1 {
       height: 60px;
       /*width: 110px;*/
       width: 120px;
@@ -60,35 +60,41 @@ header .cabeza {
       display: flex;
       flex-direction: row;
       /*margin-left: 100px;*/ }
-      header .cabeza .flexxxx .div1 svg {
+      header .navbar .flexxxx .div1 svg {
         width: 40px;
         height: 40px;
         margin-top: 12px; }
-      header .cabeza .flexxxx .div1 a {
+      header .navbar .flexxxx .div1 a {
         color: white;
         text-decoration: none;
         transition: transform; }
-        header .cabeza .flexxxx .div1 a .titulo {
+        header .navbar .flexxxx .div1 a .titulo {
           font-size: 27px; }
         @media screen and (max-width: 439px) {
-          header .cabeza .flexxxx .div1 a .titulo {
+          header .navbar .flexxxx .div1 a .titulo {
             font-size: 20px;
             margin-top: 8px; } }
-      header .cabeza .flexxxx .div1 a:hover {
+      header .navbar .flexxxx .div1 a:hover {
         color: rgba(255, 166, 0, 0.993); }
     @media screen and (max-width: 439px) {
-      header .cabeza .flexxxx .div1 {
+      header .navbar .flexxxx .div1 {
         width: 90px; } }
-    header .cabeza .flexxxx .div1:hover {
+    @media screen and (max-width: 377px) {
+      header .navbar .flexxxx .div1 {
+        margin-right: 5px; } }
+    @media screen and (max-width: 341px) {
+      header .navbar .flexxxx .div1 {
+        margin-right: 0px; } }
+    header .navbar .flexxxx .div1:hover {
       color: rgba(255, 166, 0, 0.993); }
-    header .cabeza .flexxxx .div3 {
+    header .navbar .flexxxx .div3 {
       padding-left: 10px; }
-      header .cabeza .flexxxx .div3 img {
+      header .navbar .flexxxx .div3 img {
         width: 70px;
         height: 65px; }
-    header .cabeza .flexxxx .div2 {
+    header .navbar .flexxxx .div2 {
       padding-left: 30px; }
-      header .cabeza .flexxxx .div2 .input {
+      header .navbar .flexxxx .div2 .input {
         height: 42px;
         width: 500px;
         border: 2px solid orange;
@@ -97,62 +103,74 @@ header .cabeza {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 14px; }
       @media screen and (max-width: 1211px) {
-        header .cabeza .flexxxx .div2 .input {
+        header .navbar .flexxxx .div2 .input {
           width: 280px; } }
       @media screen and (max-width: 991px) {
-        header .cabeza .flexxxx .div2 .input {
-          width: 400px;
+        header .navbar .flexxxx .div2 .input {
+          width: 600px;
           height: 38px; } }
+      @media screen and (max-width: 889px) {
+        header .navbar .flexxxx .div2 .input {
+          width: 500px; } }
       @media screen and (max-width: 801px) {
-        header .cabeza .flexxxx .div2 .input {
+        header .navbar .flexxxx .div2 .input {
+          width: 450px; } }
+      @media screen and (max-width: 739px) {
+        header .navbar .flexxxx .div2 .input {
+          width: 400px; } }
+      @media screen and (max-width: 673px) {
+        header .navbar .flexxxx .div2 .input {
+          width: 350px; } }
+      @media screen and (max-width: 623px) {
+        header .navbar .flexxxx .div2 .input {
           width: 300px; } }
-      @media screen and (max-width: 701px) {
-        header .cabeza .flexxxx .div2 .input {
+      @media screen and (max-width: 571px) {
+        header .navbar .flexxxx .div2 .input {
+          width: 250px; } }
+      @media screen and (max-width: 521px) {
+        header .navbar .flexxxx .div2 .input {
           width: 200px; } }
-      @media screen and (max-width: 485px) {
-        header .cabeza .flexxxx .div2 .input {
+      @media screen and (max-width: 465px) {
+        header .navbar .flexxxx .div2 .input {
           width: 150px; } }
-      @media screen and (max-width: 439px) {
-        header .cabeza .flexxxx .div2 .input {
-          width: 140px; } }
+      @media screen and (max-width: 409px) {
+        header .navbar .flexxxx .div2 .input {
+          /* width: 140px;*/ } }
       @media screen and (max-width: 377px) {
-        header .cabeza .flexxxx .div2 .input {
+        header .navbar .flexxxx .div2 .input {
           width: 115px;
           padding-left: 2px; } }
     @media screen and (max-width: 991px) {
-      header .cabeza .flexxxx .div2 {
+      header .navbar .flexxxx .div2 {
         height: 38px; } }
-    header .cabeza .flexxxx button .bi-search {
+    header .navbar .flexxxx button .bi-search {
       width: 20px;
       height: 20px; }
-    header .cabeza .flexxxx ul li #navbarDropdown {
+    header .navbar .flexxxx ul li #navbarDropdown {
       margin-top: 5px;
       padding-left: 50px;
       color: white; }
-    header .cabeza .flexxxx .btn-outline-success {
+    header .navbar .flexxxx .btn-outline-success {
       color: orange;
       border: 1px solid orange;
       border-radius: 0px 2px 2px 0px; }
-    @media screen and (max-width: 439px) {
-      header .cabeza .flexxxx .btn-outline-success {
-        /*display: none;*/ } }
-    header .cabeza .flexxxx .btn-outline-success:hover {
+    header .navbar .flexxxx .btn-outline-success:hover {
       color: white;
       background-color: orange; }
-    header .cabeza .flexxxx .div4 {
+    header .navbar .flexxxx .div4 {
       padding-left: 50px;
       padding-top: 15px;
       font-size: 14px; }
-    header .cabeza .flexxxx .div5 {
+    header .navbar .flexxxx .div5 {
       padding-left: 50px;
       padding-top: 13px; }
-      header .cabeza .flexxxx .div5 a {
+      header .navbar .flexxxx .div5 a {
         text-decoration: none;
         color: white;
         transition: transform; }
-      header .cabeza .flexxxx .div5 a:hover {
+      header .navbar .flexxxx .div5 a:hover {
         color: rgba(255, 166, 0, 0.993); }
-    header .cabeza .flexxxx .div6 {
+    header .navbar .flexxxx .div6 {
       border: 2px solid rgba(255, 166, 0, 0.993);
       border-radius: 5px;
       background-color: rgba(255, 166, 0, 0.993);
@@ -162,78 +180,105 @@ header .cabeza {
                 justify-content: center;*/
       margin-left: 50px;
       margin-top: 9px; }
-      header .cabeza .flexxxx .div6 a {
+      header .navbar .flexxxx .div6 a {
         text-decoration: none;
         color: black; }
-      header .cabeza .flexxxx .div6 a:hover {
+      header .navbar .flexxxx .div6 a:hover {
         color: white; }
+    @media screen and (max-width: 991px) {
+      header .navbar .flexxxx .div6 {
+        /*margin-left: 430px;*/
+        margin-bottom: 10px; } }
 
 @media screen and (max-width: 991px) {
-  header .cabeza {
+  header .navbar {
     display: block;
-    /*#navbarSupportedContent{
-                display: flex;
-                flex-direction: column-reverse;
+    /*.div6{
+                margin-left: 500px;
             }*/
-    /*.d-flex{
-                margin-top: 20px;
-                padding-left: 0px;
+    /*.div1{
                 margin-left: 0px;
-                display: block;
+                padding-left: 0px;
+                padding-right: 0px;
+                margin-right: 0px;
+            }
+            .div4{
+                margin-top: 10px;
+                margin-left: 10px;
+                padding-left: 0px;
+            }
+            ul{
+                li{
+                    #navbarDropdown{
+                        margin-top: 10px;
+                        margin-left: 3px;
+                        padding-left: 0px;
+                    }
+                }
+            }
+            .div5{
+                margin-top: 10px;
+                margin-left: 3px;
+                padding-left: 0px;
+            }
+            .div6{
+                margin-top: 10px;
+                margin-left: 0px;
+                padding-left: 0px;
             }*/ }
-    header .cabeza .d-flex {
+    header .navbar .container-fluid {
+      display: flex;
+      justify-content: space-around; }
+    header .navbar .d-flex {
       margin-bottom: 0px;
       margin-top: 0px;
       padding-top: 0px;
       margin-left: 0px;
-      padding-left: 0px; }
-      header .cabeza .d-flex .div2 {
+      padding-left: 0px;
+      margin-right: 0px; }
+      header .navbar .d-flex .div2 {
         padding-left: 0px;
         margin-left: 0px; }
-    header .cabeza .div1 {
-      margin-left: 20px;
-      padding-right: 0px;
-      margin-right: 0px; }
-    header .cabeza .div4 {
-      margin-top: 10px;
-      margin-left: 10px;
-      padding-left: 0px; }
-    header .cabeza ul li #navbarDropdown {
-      margin-top: 10px;
-      margin-left: 3px;
-      padding-left: 0px; }
-    header .cabeza .div5 {
-      margin-top: 10px;
-      margin-left: 3px;
-      padding-left: 0px; }
-    header .cabeza .div6 {
-      margin-top: 10px;
-      margin-left: 0px;
-      padding-left: 0px; }
-    header .cabeza .navbar-toggler {
-      color: white;
-      border: solid 1px white;
+    header .navbar .nav-item {
+      display: flex;
+      justify-content: center; }
+    header .navbar .div5 {
+      display: flex;
+      justify-content: center; }
+    header .navbar .navbar-toggler {
+      /*color: white;*/
+      border: solid 2px gray;
       background-color: white;
-      margin-right: 20px; }
-      header .cabeza .navbar-toggler .navbar-toggler-icon {
-        background-color: white; } }
+      margin-right: 0px;
+      margin-left: 0px; }
+      header .navbar .navbar-toggler .navbar-toggler-icon {
+        /*background-color: white;*/ }
+    header .navbar .navbar-toggler:hover {
+      border: solid 0px grey;
+      color: gray; } }
+  @media screen and (max-width: 991px) and (max-width: 377px) {
+    header .navbar .navbar-toggler {
+      margin-left: 5px; } }
+  @media screen and (max-width: 991px) and (max-width: 341px) {
+    header .navbar .navbar-toggler {
+      margin-right: 0px; } }
 
 @media screen and (max-width: 557px) {
-  header .cabeza .div1 {
+  header .navbar .div1 {
     margin-left: 0px;
     padding-right: 0px;
     margin-right: 0px;
     padding-left: 0px; }
-    header .cabeza .div1 h1 {
+    header .navbar .div1 h1 {
       padding-right: 0px;
       margin-right: 0px; }
-  header .cabeza .d-flex {
+  header .navbar .d-flex {
     margin-left: 0px;
     margin-right: 0px; }
-    header .cabeza .d-flex .div2 {
+    header .navbar .d-flex .div2 {
       margin-left: 0px;
       margin-right: 0px; }
-  header .cabeza .navbar-toggler {
+  header .navbar .navbar-toggler {
     margin-right: 0px; } }
 
 .color {
@@ -254,12 +299,12 @@ header .cabeza {
       color: rgba(255, 166, 0, 0.993); }
 
 /*EXTENDS*/
-header .cabeza, main .comprar-todo, main .comprar-todo .flex .texto .mas-vendido, main .comprar-todo .flex .texto .comprar-ahora, main .felxx .grid-seccion .grid .barra-comprar, main .felxx .grid-seccion .grid #noflex #cajita {
+header .navbar, main .comprar-todo, main .comprar-todo .flex .texto .mas-vendido, main .comprar-todo .flex .texto .comprar-ahora, main .felxx .grid-seccion .grid .barra-comprar, main .felxx .grid-seccion .grid #noflex #cajita {
   display: flex;
   justify-content: center;
   align-items: center; }
 
-header .cabeza .flexxxx .div6, main .felxx, main section .ventas-inicio .div6, .color .div-inicio-sesion .inicio-card .enter {
+header .navbar .flexxxx .div6, main .felxx, main section .ventas-inicio .div6, .color .div-inicio-sesion .inicio-card .enter {
   display: flex;
   justify-content: center; }
 
@@ -296,36 +341,47 @@ main {
   main .comprar-todo {
     /*display: flex;
         align-items: center;
-        justify-content: center;*/ }
+        justify-content: center;*/
+    /*@media screen and (max-width: 463px){
+            .flex{
+                height: 1300px;
+                .comprar-foto{
+                    width: 40%;
+                }
+                .texto{
+                    width: 60%;
+                }
+            }
+        }*/ }
     main .comprar-todo .flex {
       display: flex;
       /*border: 1px solid gray;*/
-      height: 1000px;
+      height: 760px;
       width: 70%;
       /*margin-left: 400px;*/
       margin-top: 50px;
       margin-bottom: 50px;
       background-color: white; }
       main .comprar-todo .flex .comprar-foto {
-        margin-top: 0px;
-        padding-top: 0px;
-        height: 350px;
-        width: 60%;
+        width: 50%;
         /*border: 1px solid gray;*/
         /*display: flex;
                 justify-content: center;*/ }
-        main .comprar-todo .flex .comprar-foto .carousel #carouselExampleCaptions img {
-          margin-top: 0px;
-          padding-top: 0px;
-          margin-bottom: 250px;
-          padding-bottom: 250px;
-          height: 350px;
-          width: 50%; }
+        main .comprar-todo .flex .comprar-foto .d-block {
+          height: 40%;
+          cursor: url("/path"), auto; }
+        main .comprar-todo .flex .comprar-foto img:hover {
+          transform: scale(1.05); }
+        main .comprar-todo .flex .comprar-foto .carousel-indicators {
+          margin-bottom: 60px; }
+        @media screen and (max-width: 989px) {
+          main .comprar-todo .flex .comprar-foto .carousel-indicators {
+            margin-bottom: 20px; } }
       main .comprar-todo .flex .texto {
         display: flex;
         flex-direction: column;
         align-items: left;
-        width: 40%;
+        width: 50%;
         /*border: 1px solid gray;*/ }
         main .comprar-todo .flex .texto .cien {
           margin-left: 5px; }
@@ -344,8 +400,10 @@ main {
           margin-top: 70px;
           margin-left: 20px;
           margin-right: 20px;
-          text-align: right;
           text-align: center; }
+        @media screen and (max-width: 851px) {
+          main .comprar-todo .flex .texto h3 {
+            text-align: left; } }
         main .comprar-todo .flex .texto .mas-vendido {
           border-radius: 5px;
           background-color: rgba(255, 166, 0, 0.993);
@@ -382,26 +440,61 @@ main {
           margin-left: 20px;
           font-size: 30px;
           font-family: Arial, Helvetica, sans-serif; }
-    @media screen and (max-width: 1347px) {
+    @media screen and (max-width: 1497px) {
       main .comprar-todo .flex {
-        width: 80%; } }
+        width: 90%; } }
     @media screen and (max-width: 1131px) {
       main .comprar-todo .flex {
-        width: 100%; }
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 0px; }
         main .comprar-todo .flex .comprar-foto {
           width: 50%; }
         main .comprar-todo .flex .texto {
           width: 50%; } }
+    @media screen and (max-width: 851px) {
+      main .comprar-todo .flex {
+        flex-direction: column;
+        height: 1250px; }
+        main .comprar-todo .flex .comprar-foto {
+          width: 60%; }
+        main .comprar-todo .flex .texto {
+          width: 100%; } }
+    @media screen and (max-width: 789px) {
+      main .comprar-todo .flex {
+        height: 1200px; } }
+    @media screen and (max-width: 767px) {
+      main .comprar-todo .flex {
+        height: 1360px; } }
+    @media screen and (max-width: 719px) {
+      main .comprar-todo .flex {
+        height: 1310px; } }
+    @media screen and (max-width: 633px) {
+      main .comprar-todo .flex {
+        height: 1280px; } }
+    @media screen and (max-width: 603px) {
+      main .comprar-todo .flex {
+        height: 1200px; } }
+    @media screen and (max-width: 589px) {
+      main .comprar-todo .flex {
+        height: 1200px; } }
+    @media screen and (max-width: 559px) {
+      main .comprar-todo .flex {
+        height: 1255px; }
+        main .comprar-todo .flex .comprar-foto {
+          width: 70%; } }
+    @media screen and (max-width: 497px) {
+      main .comprar-todo .flex {
+        height: 1210px; } }
+    @media screen and (max-width: 455px) {
+      main .comprar-todo .flex {
+        height: 1182px; } }
+    @media screen and (max-width: 375px) {
+      main .comprar-todo .flex {
+        height: 1140px; } }
     @media screen and (max-width: 603px) {
       main .comprar-todo .flex .texto h3 {
         margin-top: 20px; } }
-    @media screen and (max-width: 463px) {
-      main .comprar-todo .flex {
-        height: 1300px; }
-        main .comprar-todo .flex .comprar-foto {
-          width: 40%; }
-        main .comprar-todo .flex .texto {
-          width: 60%; } }
   main .felxx {
     /*display: flex;
         justify-content: center;*/ }
@@ -424,7 +517,10 @@ main {
           padding-bottom: 2px; }
         main .felxx .grid-seccion .grid img {
           width: 90%;
-          height: 70%; }
+          height: 70%;
+          cursor: url("/path"), auto; }
+        main .felxx .grid-seccion .grid img:hover {
+          transform: scale(1.05); }
         main .felxx .grid-seccion .grid h3 {
           font-size: 27px; }
         main .felxx .grid-seccion .grid .barra-comprar {
@@ -528,7 +624,8 @@ main {
         color: white; }
   main section .centrar {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-left: 60px; }
     main section .centrar .ventas-datos {
       padding-top: 30px;
       height: 50px;
@@ -541,7 +638,9 @@ main {
     main section .centrar .ubicacion {
       height: 650px;
       padding-top: 40px;
-      padding-left: 40px; }
+      padding-left: 40px;
+      padding-bottom: 0px;
+      margin-bottom: 0px; }
       main section .centrar .ubicacion .a {
         padding-top: 30px; }
     @media screen and (max-width: 645px) {
@@ -551,7 +650,8 @@ main {
       main section .centrar .ventas-datos h2 {
         padding-left: 5px; }
       main section .centrar .ubicacion {
-        padding-left: 5px; }
+        padding-left: 5px;
+        height: 500px; }
       main section .centrar #productos {
         margin-top: 0px; } }
     @media screen and (max-width: 400px) {
@@ -564,7 +664,9 @@ main {
     main section .centrar .g-3 {
       width: 500px;
       margin-left: 0px;
-      margin-bottom: 100px; }
+      margin-bottom: 60px;
+      margin-top: 0px;
+      padding-top: 0px; }
       main section .centrar .g-3 div .largo {
         height: 100px; }
     @media screen and (max-width: 645px) {
@@ -572,13 +674,19 @@ main {
         width: 350px; } }
     @media screen and (max-width: 767px) {
       main section .centrar .g-3 {
-        margin-bottom: 250px; } }
+        margin-bottom: 200px; } }
+    @media screen and (max-width: 645px) {
+      main section .centrar .g-3 {
+        margin-bottom: 340px; } }
     @media screen and (max-width: 400px) {
       main section .centrar .g-3 {
         padding-left: 0px;
         margin-left: 0px;
         margin-right: 0px;
         padding-right: 0px; } }
+  @media screen and (max-width: 775px) {
+    main section .centrar {
+      margin-left: 0px; } }
   @media screen and (max-width: 645px) {
     main section .centrar {
       display: flex;
@@ -599,7 +707,11 @@ main {
         align-items: center;*/
     flex-direction: column; }
     .color .div-inicio-sesion .iniciar-texto {
-      text-align: center; }
+      text-align: center;
+      font-size: 40px; }
+    @media screen and (max-width: 851px) {
+      .color .div-inicio-sesion .iniciar-texto {
+        font-size: 32px; } }
     .color .div-inicio-sesion .registrarse-texto {
       color: white; }
     @media screen and (max-width: 389px) {
@@ -611,7 +723,7 @@ main {
       .color .div-inicio-sesion .inicio-card .correo {
         padding-top: 124px;
         margin-bottom: 8px; }
-      @media screen and (max-width: 801px) {
+      @media screen and (max-width: 851px) {
         .color .div-inicio-sesion .inicio-card .correo {
           padding-right: 00px; } }
       .color .div-inicio-sesion .inicio-card .barra-correo {
@@ -620,13 +732,13 @@ main {
         border: 2px solid grey;
         border-radius: 5px;
         padding-left: 5px; }
-      @media screen and (max-width: 801px) {
+      @media screen and (max-width: 851px) {
         .color .div-inicio-sesion .inicio-card .barra-correo {
           margin-right: 00px; } }
       .color .div-inicio-sesion .inicio-card .contra {
         padding-top: 30px;
         margin-bottom: 8px; }
-      @media screen and (max-width: 801px) {
+      @media screen and (max-width: 851px) {
         .color .div-inicio-sesion .inicio-card .contra {
           margin-left: 00px; } }
       .color .div-inicio-sesion .inicio-card .enter {
@@ -645,7 +757,7 @@ main {
           transition: transform; }
         .color .div-inicio-sesion .inicio-card .enter p:hover {
           color: white; }
-      @media screen and (max-width: 801px) {
+      @media screen and (max-width: 851px) {
         .color .div-inicio-sesion .inicio-card .enter {
           margin-right: 00px; } }
 

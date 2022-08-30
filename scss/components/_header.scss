@@ -1,7 +1,7 @@
 @import "../base/variables";
 @import "../base/maps-extends";
 header{
-    .cabeza{
+    .navbar{
         /*display: flex;
         justify-content: center;
         align-items: center;*/
@@ -51,6 +51,16 @@ header{
                 }
                 
             }
+            @media screen and (max-width: 377px){
+                .div1{
+                    margin-right: 5px;
+                }
+            }
+            @media screen and (max-width: 341px){
+                .div1{
+                    margin-right: 0px;
+                }
+            }
             .div1:hover{
                 color: $naranja;
             }
@@ -80,32 +90,56 @@ header{
                 }
                 @media screen and (max-width: 991px){
                     .input{
-                        width: 400px;
+                        width: 600px;
                         height: 38px;
                     }
                     
                 }
+                @media screen and (max-width: 889px){
+                    .input{
+                        width: 500px;
+                    }
+                }
                 @media screen and (max-width: 801px){
+                    .input{
+                        width: 450px;
+                    }
+                    
+                }
+                @media screen and (max-width: 739px){
+                    .input{
+                        width: 400px;
+                    }
+                }
+                @media screen and (max-width: 673px){
+                    .input{
+                        width: 350px;
+                    }
+                }
+                @media screen and (max-width: 623px){
                     .input{
                         width: 300px;
                     }
-                    
                 }
-                @media screen and (max-width: 701px){
+                @media screen and (max-width: 571px){
+                    .input{
+                        width: 250px;
+                    }
+                }
+                @media screen and (max-width: 521px){
                     .input{
                         width: 200px;
                     }
-                    
                 }
-                @media screen and (max-width: 485px){
+                @media screen and (max-width: 465px){
                     .input{
                         width: 150px;
                     }
                     
                 }
-                @media screen and (max-width: 439px){
+                @media screen and (max-width: 409px){
                     .input{
-                        width: 140px;
+                       /* width: 140px;*/
                     }
                     
                 }
@@ -146,7 +180,7 @@ header{
             }
             @media screen and (max-width: 439px){
                 .btn-outline-success{
-                    /*display: none;*/
+                    
                 }
                 
             }
@@ -190,37 +224,50 @@ header{
                     color: white;
                 }
             }
+            @media screen and (max-width: 991px){
+                .div6{
+                    /*margin-left: 430px;*/
+                    margin-bottom: 10px;
+                }
+            }
         }
     }
     @media screen and (max-width: 991px){
-        .cabeza{
+        .navbar{
             display: block;
+            .container-fluid{
+                display: flex;
+                justify-content: space-around;
+            }
             .d-flex{
                 margin-bottom: 0px;
                 margin-top: 0px;
                 padding-top: 0px;
                 margin-left: 0px;
                 padding-left: 0px;
+                margin-right: 0px;
                 .div2{
                     padding-left: 0px;
                     margin-left: 0px;
                 }
             }
-            /*#navbarSupportedContent{
+            .nav-item{
                 display: flex;
-                flex-direction: column-reverse;
+                justify-content: center;
+            }
+            .div5{
+                display: flex;
+                justify-content: center;
+            }
+            /*.div6{
+                margin-left: 500px;
             }*/
-            .div1{
-                margin-left: 20px;
+            /*.div1{
+                margin-left: 0px;
+                padding-left: 0px;
                 padding-right: 0px;
                 margin-right: 0px;
             }
-            /*.d-flex{
-                margin-top: 20px;
-                padding-left: 0px;
-                margin-left: 0px;
-                display: block;
-            }*/
             .div4{
                 margin-top: 10px;
                 margin-left: 10px;
@@ -244,20 +291,35 @@ header{
                 margin-top: 10px;
                 margin-left: 0px;
                 padding-left: 0px;
-            }
+            }*/
             .navbar-toggler{
-                color: white;
-                border: solid 1px white;
+                /*color: white;*/
+                border: solid 2px gray;
                 background-color: white;
-                margin-right: 20px;
+                margin-right: 0px;
+                margin-left: 0px;
                 .navbar-toggler-icon{
-                    background-color: white;
+                    /*background-color: white;*/
+                }
+            }
+            .navbar-toggler:hover{
+                border: solid 0px grey;
+                color: gray;
+            }
+            @media screen and (max-width: 377px){
+                .navbar-toggler{
+                    margin-left: 5px;
+                }
+            }
+            @media screen and (max-width: 341px){
+                .navbar-toggler{
+                    margin-right: 0px;
                 }
             }
         }
     }
     @media screen and (max-width: 557px){
-        .cabeza{
+        .navbar{
             .div1{
                 margin-left: 0px;
                 padding-right: 0px;
