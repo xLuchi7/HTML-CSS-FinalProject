@@ -9,13 +9,19 @@ main{
             height: 50px;
             flex-wrap: wrap;
             .mdiv1{
-                /*display: flex;
-                align-items: center;*/
                 @extend %flexTres;
                 justify-content: space-around;
                 font-size: 14px;
                 padding-top: 5px;
                 flex-wrap: wrap;
+                #categorias{
+                    height: 23px;
+                }
+                @media screen and (max-width: 699px){
+                    #categorias{
+                        height: 22px;
+                    }  
+                }
                 a{
                     text-decoration: none;
                     color: white;
@@ -23,6 +29,13 @@ main{
                     .ofertas{
                         font-size: 24px;
                         padding-top: 3px;
+                    }
+                    @media screen and (max-width: 699px){
+                        .ofertas{
+                            font-size: 19px;
+                            margin-top: 4px;
+                        }
+                        
                     }
                 }
                 a:hover{
@@ -33,29 +46,31 @@ main{
                         font-size: 24px;
                         padding-top: 3px;
                     }
+                    @media screen and (max-width: 699px){
+                        .vender{
+                            font-size: 19px;
+                            margin-top: 0px;
+                        }
+                        
+                    }
                 }
             }
         }
     }
     .comprar-todo{
-        /*display: flex;
-        align-items: center;
-        justify-content: center;*/
         @extend %flex;
+        background-color: $main-back;
         .flex{
             display: flex;
-            /*border: 1px solid gray;*/
             height: 760px;
             width: 70%;
-            /*margin-left: 400px;*/
             margin-top: 50px;
             margin-bottom: 50px;
             background-color: white;
+            border-radius: 3px;
+            box-shadow: 0px 0px 5px 2px gray;
             .comprar-foto{
                 width: 50%;
-                /*border: 1px solid gray;*/
-                /*display: flex;
-                justify-content: center;*/
                 .d-block{
                     height: 40%;
                     cursor: url("/path"), auto;
@@ -78,7 +93,6 @@ main{
                 flex-direction: column;
                 align-items: left;
                 width: 50%;
-                /*border: 1px solid gray;*/
                 .cien{
                     margin-left: 5px;
                 }
@@ -113,14 +127,11 @@ main{
                     background-color: $naranja;
                     height: 24px;
                     width: 95px;
-                    /*display: flex;
-                    justify-content: center;
-                    align-items: center;*/
                     @extend %flex;
                     margin-top: 8px;
                     margin-left: 20px;
                     h6{
-                        margin-top: 5px;
+                        margin-top: 7px;
                         color: white;
                         font-size: 12px;
                     }
@@ -134,17 +145,23 @@ main{
                     background-color: $naranja;
                     height: 44px;
                     width: 89%;
-                    /*display: flex;
-                    justify-content: center;
-                    align-items: center;*/
                     @extend %flex;
                     margin-top: 28px;
                     margin-left: 20px;
-                    h6{
-                        margin-top: 3px;
-                        color: white;
-                        font-size: 22px;
+                    a{
+                        text-decoration: none;
+                        h6{
+                            margin-top: 3px;
+                            color: white;
+                            font-size: 22px;
+                        }
+                        h6:hover{
+                            color: white;
+                        }
                     }
+                }
+                .comprar-ahora:hover{
+                    background-color: rgb(235, 165, 36);
                 }
                 h5{
                     margin-top: 20px;
@@ -164,6 +181,8 @@ main{
                 width: 100%;
                 margin-top: 0px;
                 margin-bottom: 0px;
+                box-shadow: none;
+                margin-bottom: 110px;
                 .comprar-foto{
                     width: 50%;
                 }
@@ -246,21 +265,8 @@ main{
                 }
             }
         }
-        /*@media screen and (max-width: 463px){
-            .flex{
-                height: 1300px;
-                .comprar-foto{
-                    width: 40%;
-                }
-                .texto{
-                    width: 60%;
-                }
-            }
-        }*/
     }
     .felxx{
-        /*display: flex;
-        justify-content: center;*/
         @extend %flexDos;
         .grid-seccion{
             display: grid;
@@ -270,6 +276,7 @@ main{
             row-gap: 15px;
             padding-top: 15px;
             padding-bottom: 15px;
+            margin-bottom: 60px;
             .grid{
                 border: 1px solid gray;
                 background-color: white;
@@ -277,6 +284,7 @@ main{
                 padding: 20px;
                 text-align: center;
                 h2{
+                    margin-top: -5px;
                     font-size: 28px;
                     padding-bottom: 2px;
                 }
@@ -292,9 +300,6 @@ main{
                     font-size: 27px;
                 }
                 .barra-comprar{
-                    /*display: flex;
-                    align-items: center;
-                    justify-content: center;*/
                     @extend %flex;
                     flex-direction: row;
                     background-color:  $main-back;
@@ -324,9 +329,11 @@ main{
                 .barra-comprar:hover{
                     background-color: $gris-claro;
                     color: white;
-                    border: 2px solid black;
+                    border: 1px solid black;
+                    box-shadow: 0px 0px 2px 1px black;
                 }
                 #noflex{
+                    margin-top: 1px;
                     display: flex;
                     justify-content: left;
                     #cajita{
@@ -335,9 +342,6 @@ main{
                         background-color: red;
                         height: 30px;
                         width: 140px;
-                        /*display: flex;
-                        align-items: center;
-                        justify-content: center;*/
                         @extend %flex;
                         margin-top: 6px;
                         p{
@@ -351,11 +355,12 @@ main{
                         padding-left: 15px;
                         padding-top: 5px;
                     }
+                    
                 }
             }
             .grid:hover{
-                border: 2px solid black;
-                box-shadow: 5px 5px 5px 5px $box-shadow;
+                border: 1px solid black;
+                box-shadow: 0px 0px 5px 2px black;
             }
         }
         @media screen and (max-width: 1051px){
@@ -377,7 +382,7 @@ main{
         text-align: center;
         font-size: 40px;
         padding-bottom: 30px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-family: serif;
     }
     section{
         .ventas-inicio{
@@ -409,8 +414,6 @@ main{
                 background-color: $naranja;
                 height: 30px;
                 width: 100px;
-                /*display: flex;
-                justify-content: center;*/
                 @extend %flexDos;
                 margin-left: 20px;
                 a{
@@ -525,7 +528,6 @@ main{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                /*margin-left: 50px;*/
                 padding-left: 0px;
                 margin-left: 0px;
                 padding-right: 0px;
@@ -539,8 +541,6 @@ main{
     .div-inicio-sesion{
         padding-top: 170px;
         color: white;
-        /*display: flex;
-        align-items: center;*/
         @extend %flexTres;
         flex-direction: column;
         .iniciar-texto{
@@ -600,18 +600,19 @@ main{
                 background-color: $naranja;
                 height: 30px;
                 width: 300px;
-                /*display: flex;
-                justify-content: center;*/
                 @extend %flexDos;
                 margin-top: 50px;
-                margin-bottom: 230px;
+                margin-bottom: 260px;
                 margin-right: 500px;
-                p{
-                    color: black;
-                    transition: transform;
-                }
-                p:hover{
-                    color: white;
+                a{
+                    text-decoration: none;
+                    p{
+                        color: black;
+                        transition: transform;
+                    }
+                    p:hover{
+                        color: white;
+                    }
                 }
             }
             @media screen and (max-width: 851px){

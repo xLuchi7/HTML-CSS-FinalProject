@@ -1,18 +1,109 @@
 footer{
-    background-color: $footer;
-    div{
-        img{
-            width: 50px;
-            height: 50px;
-            margin-left: 15px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            .imgDos{
-                margin-left: 40px;
+    background-color: white;
+    .footer{
+        @extend %flexDos;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 40px;
+        height: 100%;
+        .pagar{
+            @extend %flex;
+            flex-direction: column;
+            width: 30%;
+            img{
+                width: 66px;
+                height: 46px;
+                margin-right: 15px;
             }
-            .imgTres{
-                margin-left: 40px;
+            p{
+                text-align: center;
+                width: 50%;
             }
+            a{
+                text-decoration: none;
+                padding-bottom: 50px;
+            }
+        }
+        @media screen and (max-width: 1281px){
+            .pagar{
+                width: 33%;
+            }
+        }
+        @media screen and (max-width: 753px){
+            .pagar{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+        .envio{
+            @extend %flex;
+            flex-direction: column;
+            width: 30%;
+            img{
+                width: 56px;
+                height: 49px;
+                margin-right: 1px;
+            }
+            p{
+                text-align: center;
+                width: 50%;
+            }
+            a{
+                text-decoration: none;
+                padding-bottom: 50px;
+            }
+        }
+        @media screen and (max-width: 1281px){
+            .envio{
+                width: 33%;
+                margin-bottom: 40px;
+            }
+        }
+        @media screen and (max-width: 753px){
+            .envio{
+                width: 100%;
+            }
+        }
+        .comunidad{
+            @extend %flexTres;
+            flex-direction: column;
+            width: 30%;
+            .grid-comunidad{
+                margin-top: 15px;
+                margin-left: 35px;
+                width: 30%;
+                display: grid;
+                justify-content: center;
+                grid-template-columns: 50px 50px 50px;
+                grid-template-rows: 40px 40px 40px;
+            }
+            @media screen and (max-width: 1281px){
+                .grid-comunidad{
+                    width: 33%;
+                }
+            }
+            @media screen and (max-width: 753px){
+                .grid-comunidad{
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+    .comprar-color{
+        background-color: white;
+    }
+    @media screen and (max-width: 1131px){
+        .comprar-color{
+        background-color: $main-back;
+        margin-top: 0px;
+        }
+    }
+    @media screen and (max-width: 753px){
+        .footer{
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
         }
     }
     .botton{
