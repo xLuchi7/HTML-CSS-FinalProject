@@ -28,12 +28,12 @@
   animation-delay: 2.4s; }
 
 /*EXTENDS*/
-header .navbar, main .comprar-todo, main .comprar-todo .flex .texto .mas-vendido, main .comprar-todo .flex .texto .comprar-ahora, main .felxx .grid-seccion .grid .barra-comprar, main .felxx .grid-seccion .grid #noflex #cajita, footer .footer .pagar, footer .footer .envio {
+header .cabeza, main .comprar-todo, main .comprar-todo .flex .texto .mas-vendido, main .comprar-todo .flex .texto .comprar-ahora, main .felxx .grid-seccion .grid .barra-comprar, main .felxx .grid-seccion .grid #noflex #cajita, footer .footer .pagar, footer .footer .envio {
   display: flex;
   justify-content: center;
   align-items: center; }
 
-header .cabeza, header .navbar .flexxxx .div6, main .felxx, main section .ventas-inicio .div6, .color .div-inicio-sesion .inicio-card .enter, footer .footer {
+header .cabeza .flexxxx .div6, main .felxx, main section .ventas-inicio .div6, .color .div-inicio-sesion .inicio-card .enter, footer .footer {
   display: flex;
   justify-content: center; }
 
@@ -43,58 +43,55 @@ main nav .seccion1 .mdiv1, .color .div-inicio-sesion, footer .footer .comunidad 
 
 header .cabeza {
   background-color: #232c2c; }
-
-header .navbar {
-  background-color: #232c2c; }
-  header .navbar .flexxxx .div1 {
+  header .cabeza .flexxxx .div1 {
     height: 60px;
     width: 120px;
     color: white;
     margin-bottom: 7px;
     display: flex;
     flex-direction: row; }
-    header .navbar .flexxxx .div1 svg {
+    header .cabeza .flexxxx .div1 svg {
       width: 47px;
       height: 46px;
       margin-top: 9px;
       margin-left: 0px;
       padding-left: 0px;
       margin-right: 2px; }
-    header .navbar .flexxxx .div1 a {
+    header .cabeza .flexxxx .div1 a {
       color: white;
       text-decoration: none;
       transition: transform; }
-      header .navbar .flexxxx .div1 a .titulo {
+      header .cabeza .flexxxx .div1 a .titulo {
         font-size: 27px; }
       @media screen and (max-width: 439px) {
-        header .navbar .flexxxx .div1 a .titulo {
+        header .cabeza .flexxxx .div1 a .titulo {
           font-size: 20px;
           margin-top: 8px; } }
-    header .navbar .flexxxx .div1 a:hover {
+    header .cabeza .flexxxx .div1 a:hover {
       color: rgba(255, 166, 0, 0.993); }
   @media screen and (max-width: 469px) {
-    header .navbar .flexxxx .div1 {
+    header .cabeza .flexxxx .div1 {
       margin-left: -15px; } }
   @media screen and (max-width: 439px) {
-    header .navbar .flexxxx .div1 {
+    header .cabeza .flexxxx .div1 {
       margin-right: 0px;
       width: 90px; } }
   @media screen and (max-width: 377px) {
-    header .navbar .flexxxx .div1 {
+    header .cabeza .flexxxx .div1 {
       margin-right: 0px; } }
   @media screen and (max-width: 341px) {
-    header .navbar .flexxxx .div1 {
+    header .cabeza .flexxxx .div1 {
       margin-right: 0px; } }
-  header .navbar .flexxxx .div1:hover {
+  header .cabeza .flexxxx .div1:hover {
     color: rgba(255, 166, 0, 0.993); }
-  header .navbar .flexxxx .div3 {
+  header .cabeza .flexxxx .div3 {
     padding-left: 10px; }
-    header .navbar .flexxxx .div3 img {
+    header .cabeza .flexxxx .div3 img {
       width: 70px;
       height: 65px; }
-  header .navbar .flexxxx .div2 {
+  header .cabeza .flexxxx .div2 {
     padding-left: 30px; }
-    header .navbar .flexxxx .div2 .input {
+    header .cabeza .flexxxx .div2 .input {
       height: 42px;
       width: 500px;
       border: 2px solid orange;
@@ -103,71 +100,71 @@ header .navbar {
       font-family: Arial, Helvetica, sans-serif;
       font-size: 14px; }
     @media screen and (max-width: 1211px) {
-      header .navbar .flexxxx .div2 .input {
+      header .cabeza .flexxxx .div2 .input {
         width: 280px; } }
     @media screen and (max-width: 991px) {
-      header .navbar .flexxxx .div2 .input {
+      header .cabeza .flexxxx .div2 .input {
         width: 600px;
         height: 38px; } }
     @media screen and (max-width: 889px) {
-      header .navbar .flexxxx .div2 .input {
+      header .cabeza .flexxxx .div2 .input {
         width: 500px; } }
     @media screen and (max-width: 801px) {
-      header .navbar .flexxxx .div2 .input {
+      header .cabeza .flexxxx .div2 .input {
         width: 450px; } }
     @media screen and (max-width: 739px) {
-      header .navbar .flexxxx .div2 .input {
+      header .cabeza .flexxxx .div2 .input {
         width: 400px; } }
     @media screen and (max-width: 687px) {
-      header .navbar .flexxxx .div2 .input {
+      header .cabeza .flexxxx .div2 .input {
         width: 350px; } }
     @media screen and (max-width: 637px) {
-      header .navbar .flexxxx .div2 .input {
+      header .cabeza .flexxxx .div2 .input {
         width: 300px; } }
     @media screen and (max-width: 587px) {
-      header .navbar .flexxxx .div2 .input {
+      header .cabeza .flexxxx .div2 .input {
         width: 250px; } }
     @media screen and (max-width: 545px) {
-      header .navbar .flexxxx .div2 .input {
+      header .cabeza .flexxxx .div2 .input {
         width: 200px; } }
     @media screen and (max-width: 481px) {
-      header .navbar .flexxxx .div2 .input {
+      header .cabeza .flexxxx .div2 .input {
         width: 150px; } }
     @media screen and (max-width: 377px) {
-      header .navbar .flexxxx .div2 .input {
+      header .cabeza .flexxxx .div2 .input {
         width: 125px;
         padding-left: 2px; } }
   @media screen and (max-width: 991px) {
-    header .navbar .flexxxx .div2 {
+    header .cabeza .flexxxx .div2 {
       height: 38px; } }
-  header .navbar .flexxxx button .bi-search {
+  header .cabeza .flexxxx button .bi-search {
     width: 20px;
     height: 20px; }
-  header .navbar .flexxxx ul li #navbarDropdown {
+  header .cabeza .flexxxx ul li #navbarDropdown {
     margin-top: 5px;
     padding-left: 50px;
     color: white; }
-  header .navbar .flexxxx .btn-outline-success {
+  header .cabeza .flexxxx .btn-outline-success {
     color: orange;
     border: 1px solid orange;
     border-radius: 0px 2px 2px 0px; }
-  header .navbar .flexxxx .btn-outline-success:hover {
+  header .cabeza .flexxxx .btn-outline-success:hover {
     color: white;
     background-color: orange; }
-  header .navbar .flexxxx .div4 {
+  header .cabeza .flexxxx .div4 {
     padding-left: 50px;
     padding-top: 15px;
     font-size: 14px; }
-  header .navbar .flexxxx .div5 {
+  header .cabeza .flexxxx .div5 {
     padding-left: 50px;
     padding-top: 13px; }
-    header .navbar .flexxxx .div5 a {
+    header .cabeza .flexxxx .div5 a {
       text-decoration: none;
       color: white;
       transition: transform; }
-    header .navbar .flexxxx .div5 a:hover {
+    header .cabeza .flexxxx .div5 a:hover {
       color: rgba(255, 166, 0, 0.993); }
-  header .navbar .flexxxx .div6 {
+  header .cabeza .flexxxx .div6 {
     border: 2px solid rgba(255, 166, 0, 0.993);
     border-radius: 5px;
     background-color: rgba(255, 166, 0, 0.993);
@@ -175,10 +172,10 @@ header .navbar {
     width: 100px;
     margin-left: 50px;
     margin-top: 9px; }
-    header .navbar .flexxxx .div6 a {
+    header .cabeza .flexxxx .div6 a {
       text-decoration: none;
       color: black; }
-    header .navbar .flexxxx .div6 a:hover {
+    header .cabeza .flexxxx .div6 a:hover {
       color: white; }
 
 @media screen and (max-width: 991px) {
@@ -286,12 +283,12 @@ header .navbar {
       color: rgba(255, 166, 0, 0.993); }
 
 /*EXTENDS*/
-header .navbar, main .comprar-todo, main .comprar-todo .flex .texto .mas-vendido, main .comprar-todo .flex .texto .comprar-ahora, main .felxx .grid-seccion .grid .barra-comprar, main .felxx .grid-seccion .grid #noflex #cajita, footer .footer .pagar, footer .footer .envio {
+header .cabeza, main .comprar-todo, main .comprar-todo .flex .texto .mas-vendido, main .comprar-todo .flex .texto .comprar-ahora, main .felxx .grid-seccion .grid .barra-comprar, main .felxx .grid-seccion .grid #noflex #cajita, footer .footer .pagar, footer .footer .envio {
   display: flex;
   justify-content: center;
   align-items: center; }
 
-header .cabeza, header .navbar .flexxxx .div6, main .felxx, main section .ventas-inicio .div6, .color .div-inicio-sesion .inicio-card .enter, footer .footer {
+header .cabeza .flexxxx .div6, main .felxx, main section .ventas-inicio .div6, .color .div-inicio-sesion .inicio-card .enter, footer .footer {
   display: flex;
   justify-content: center; }
 

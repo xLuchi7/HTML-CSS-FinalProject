@@ -2,10 +2,6 @@
 @import "../base/maps-extends";
 header{
     .cabeza{
-        @extend %flexDos;;
-        background-color: $header-back;
-    }
-    .navbar{
         @extend %flex;
         background-color: $header-back;
         .flexxxx{
